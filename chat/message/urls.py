@@ -19,10 +19,10 @@ from django.urls import path
 from .views import *
 
 urlpatterns = [
-    path(' /', ExamDateSheetAPIView.as_view(), name='exam_datesheet'),
-    path('result/', ResultAPIView.as_view(), name='results'),
+    # path(' /', ExamDateSheetAPIView.as_view(), name='exam_datesheet'),
+    # path('result/', ResultAPIView.as_view(), name='results'),
     
-    path('search/', SearchView.as_view(), name='multi_model_search'),
+    # path('search/', SearchView.as_view(), name='multi_model_search'),
 
     path('events/', EventListAPIView.as_view(), name='event-list-api'),
     path('events/by-month/', EventByMonthAPIView.as_view(), name='event-by-month-api'),
